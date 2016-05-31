@@ -1,0 +1,21 @@
+{
+  "plugins": [
+    "com_osvr_Laputa"
+  ],
+  "routes": [
+    {
+      "destination": "/me/head",
+      "source": {
+      "changeBasis": {
+          "x": "x",
+          "y": "-y",
+          "z": "z"
+        },
+        "child": {
+          "tracker": "/com_osvr_Laputa/LaputaHeroTracker",
+          "sensor": 0
+        }
+      }
+    }
+  ]
+}
