@@ -1,0 +1,27 @@
+{
+	"deviceVendor": "Laputa",
+	"deviceName": "Hero Plus",
+	"author": "Georgiy Frolov georgiy@sensics.com",
+	"version": 1,
+	"lastModified": "",
+	"interfaces": {
+		"analog": {
+			"count": 11
+		}
+	},
+	"semantic": {
+		"imu": {
+			"temperature": "analog/0",
+			"reportIndex": "analog/1",
+			"accelerometer_x": "analog/2",
+			"accelerometer_y": "analog/3",
+			"accelerometer_z": "analog/4",
+			"gyro_x": "analog/5",
+			"gyro_y": "analog/6",
+			"gyro_z": "analog/7",
+			"mag_x": "analog/8",
+			"mag_y": "analog/9",
+			"mag_z": "analog/10"
+		}
+	}
+}
