@@ -1,7 +1,4 @@
 {
-  "plugins": [
-    "com_osvr_Laputa"
-  ],
   "routes": [
     {
       "destination": "/me/head",
@@ -12,7 +9,7 @@
           "z": "z"
         },
         "child": {
-          "tracker": "/com_osvr_Laputa/LaputaHeroTracker",
+          "tracker": "/com_osvr_Laputa/LaputaHeroTracker0",
           "sensor": 0
         }
       }
