@@ -1,18 +1,7 @@
 {
-  "routes": [
-    {
-      "destination": "/me/head",
-      "source": {
-      "changeBasis": {
-          "x": "x",
-          "y": "-y",
-          "z": "z"
-        },
-        "child": {
-          "tracker": "/com_osvr_Laputa/LaputaHeroTracker0",
-          "sensor": 0
-        }
-      }
-    }
-  ]
+	"display": "displays/LaputaVR_Hero2560.json",
+	"renderManagerConfig": "sample-configs/renderManager.extended.landscape.json",
+	"aliases": {
+		"/me/head": "/com_osvr_Laputa/LaputaHeroTracker0/tracker/0"
+	}
 }
