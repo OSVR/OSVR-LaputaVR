@@ -92,7 +92,7 @@ class VRPNHardwareDetect : boost::noncopyable {
                 }
 
                 // Laputa VR
-                if (dev->vendor_id == 0x2833 && dev->product_id == 0x0001) {
+                if (dev->vendor_id == 0x2633 && dev->product_id == 0x0006) {
                     gotDevice = true;
                     m_handlePath(dev->path);
 
