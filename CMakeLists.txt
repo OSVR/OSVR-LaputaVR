@@ -14,12 +14,12 @@ find_package(VRPN REQUIRED)
 # Generate our JSON header file
 osvr_convert_json(com_osvr_Laputa_json
     com_osvr_Laputa.json
-    '${CMAKE_CURRENT_BINARY_DIR}/com_osvr_Laputa_json.h')
+    "${CMAKE_CURRENT_BINARY_DIR}/com_osvr_Laputa_json.h")
 
 osvr_convert_json(com_osvr_IMU_Combiner_json
     com_osvr_IMU_Combiner.json
-    '${CMAKE_CURRENT_BINARY_DIR}/com_osvr_IMU_Combiner_json.h')
-    
+    "${CMAKE_CURRENT_BINARY_DIR}/com_osvr_IMU_Combiner_json.h")
+
 add_subdirectory(vendor)
 
 if(NOT TARGET hidapi)
@@ -36,7 +36,7 @@ osvr_add_plugin(com_osvr_Laputa
     VRPNMultiserver.cpp
     "${CMAKE_CURRENT_BINARY_DIR}/com_osvr_Laputa_json.h"
     "${CMAKE_CURRENT_BINARY_DIR}/com_osvr_IMU_Combiner_json.h")
-    
+
 target_include_directories(com_osvr_Laputa
                             PRIVATE
                             ${VRPN_INCLUDE_DIRS}
